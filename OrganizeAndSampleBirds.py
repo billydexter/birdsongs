@@ -1,3 +1,5 @@
+import random
+
 class Bird:
     def __init__(self, name, filename):
         self.name = name
@@ -14,6 +16,7 @@ def readPNGs():
 
 def divideBirds(proportion):
     birds = readPNGs()
+    random.shuffle(birds)
     index = int(len(birds) * proportion)
     trainingData = birds[:index]
     testingData = birds[index:]
