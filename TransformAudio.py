@@ -60,7 +60,7 @@ def graph_specgram(name, samples, sampling_rate):
     powerSpectrum, freqenciesFound, time, imageAxis = plt.specgram(samples, Fs=sampling_rate)
 
     plt.xlabel('Time')
-    plt.title(name)
+    #plt.title(name)
     plt.ylabel('Frequency')
     plt.show()
 
